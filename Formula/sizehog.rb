@@ -1,20 +1,20 @@
 class Sizehog < Formula
   desc "Find the biggest files under a path."
   homepage "https://github.com/suraj7974/cliTools"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/suraj7974/cliTools/releases/download/sizehog-v0.1.1/sizehog-aarch64-apple-darwin.tar.xz"
-      sha256 "5fe574d87a2a94cc442a49c1465c0ec03002134390e9fbc728aa063ceb355a0f"
+      url "https://github.com/suraj7974/cliTools/releases/download/sizehog-v0.1.2/sizehog-aarch64-apple-darwin.tar.xz"
+      sha256 "f1bb300f427895803aaf0cea7cf944be02f15c2070d8532c3087afe14bd10665"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/suraj7974/cliTools/releases/download/sizehog-v0.1.1/sizehog-x86_64-apple-darwin.tar.xz"
-      sha256 "b4c80faa33ca52ca22041c8c8590736154daa2d51b8192cc416b3b597d786cd2"
+      url "https://github.com/suraj7974/cliTools/releases/download/sizehog-v0.1.2/sizehog-x86_64-apple-darwin.tar.xz"
+      sha256 "3c662b400587eedf9db8f6785634c55c16dd1544aacded5621564f03e2ea5eb7"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/suraj7974/cliTools/releases/download/sizehog-v0.1.1/sizehog-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "d21d3249a76040fa3b5578f43e097118765889f1179cda6622f53e5ad56c8ad8"
+    url "https://github.com/suraj7974/cliTools/releases/download/sizehog-v0.1.2/sizehog-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "bbaf9441d5f505d754d8a02cd89b935a565def257934d3e830f96f595894cc82"
   end
   license "MIT"
 
