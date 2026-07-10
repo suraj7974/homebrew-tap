@@ -1,20 +1,20 @@
 class PipsCli < Formula
-  desc "Ghost-text package suggestions for `pip install` in your shell."
+  desc "Ghost-text package suggestions for pip / npm / pnpm / yarn in your shell."
   homepage "https://github.com/suraj7974/cliTools"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/suraj7974/cliTools/releases/download/pips-cli-v0.1.0/pips-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "058c899d42207cdf035f2a64053d5f17e9d603ae02fb3895145ab1b87e7fa63f"
+      url "https://github.com/suraj7974/cliTools/releases/download/pips-cli-v0.2.0/pips-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "30e2bd63b6e2b837fc34bd1cd1a07cc7dacfe73c4c9a5402d0ea7404dd11a57a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/suraj7974/cliTools/releases/download/pips-cli-v0.1.0/pips-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "0ae26ac61e004268c4d81b6dbbc4439512b15371f3cd1a640cee023cb60cf563"
+      url "https://github.com/suraj7974/cliTools/releases/download/pips-cli-v0.2.0/pips-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "3af2e254319c832f0b4273482e9be7fc12932bda8b486e872e28003a0ffcd9c8"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/suraj7974/cliTools/releases/download/pips-cli-v0.1.0/pips-cli-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "550583dfb1eb0776e728dbdf9be4a2dba56c6b75d7465a0b4387cf6c0e9c5733"
+    url "https://github.com/suraj7974/cliTools/releases/download/pips-cli-v0.2.0/pips-cli-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "4201efeb892bb93ea763b79ed8ab7aa54fb6e104fd610393cbdf498a84a813cf"
   end
   license "MIT"
 
